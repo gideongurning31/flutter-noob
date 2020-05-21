@@ -8,7 +8,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(this.appTitle), centerTitle: true, backgroundColor: Colors.blueAccent[500]),
+      appBar: AppBar(title: Text(this.appTitle), centerTitle: true),
       drawer: MenuDrawer(),
       body: Home(),
     );
