@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'MenuDrawer.dart';
 import 'menu/Home.dart';
 
-class App extends StatelessWidget {
+class App extends StatefulWidget {
+  @override
+  _AppState createState() => _AppState();
+}
+
+class _AppState extends State<App> {
   final String appTitle = 'HKBP Reformanda';
 
   @override
