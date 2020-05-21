@@ -10,7 +10,12 @@ void main() => runApp(MaterialApp(
       theme: ThemeData(
         fontFamily: nunitoFont,
         appBarTheme: AppBarTheme(
-          textTheme: ThemeData.light().textTheme.copyWith(title: TextStyle(fontFamily: montserratFont)),
+          textTheme: ThemeData.light().textTheme.copyWith(
+              title: TextStyle(
+                  fontFamily: montserratFont,
+                  fontSize: 20.0,
+                  fontWeight: FontWeight.bold
+              )),
         ),
       ),
       home: Home(),

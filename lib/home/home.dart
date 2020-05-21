@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import './menutile.dart';
 
 class Home extends StatelessWidget {
   String appTitle = 'App Title';
@@ -9,25 +10,23 @@ class Home extends StatelessWidget {
       appBar: AppBar(
         title: Text(this.appTitle),
         centerTitle: true,
-        backgroundColor: Colors.blueGrey[500],
+        backgroundColor: Colors.blueAccent[500],
       ),
-      body: Center(
-          child: Text('This is the body widget.',
-              style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                letterSpacing: 1.5,
-                color: Colors.black,
-              ))),
-      floatingActionButton: FloatingActionButton(
-        child: Text('click'),
-        backgroundColor: Colors.blueGrey[600],
-        onPressed: () => buttonClick(),
+
+      drawer: Drawer(
+        child: ListView(
+          children: <Widget>[
+            DrawerHeader(
+              child: Text('DRAWER HEADER'),
+              decoration: BoxDecoration(gradient: LinearGradient(colors: <Color>[Colors.blue, Colors.lightBlueAccent])),
+            ),
+            MenuTile(),
+            MenuTile(),
+            MenuTile(),
+          ],
+        ),
       ),
     );
   }
 
-  void buttonClick() {
-    print('Button clicked.');
-  }
 }
