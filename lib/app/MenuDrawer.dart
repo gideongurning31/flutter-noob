@@ -5,12 +5,13 @@ import '../model/MenuTileModel.dart';
 
 class MenuDrawer extends StatelessWidget {
 
+  final String logoSVG = 'assets/images/title-logo.svg';
   final List<MenuTileModel> menuList = [
-    MenuTileModel(text: 'Kegiatan', icon: Icons.av_timer),
-    MenuTileModel(text: 'Kategorial', icon: Icons.accessibility_new),
-    MenuTileModel(text: 'Renungan', icon: Icons.book),
-    MenuTileModel(text: 'Warta', icon: Icons.title),
-    MenuTileModel(text: 'Pengaturan', icon: Icons.settings)
+    MenuTileModel(text: 'Kegiatan', icon: Icons.av_timer, onTap: () => {}),
+    MenuTileModel(text: 'Kategorial', icon: Icons.accessibility_new, onTap: () => {}),
+    MenuTileModel(text: 'Renungan', icon: Icons.book, onTap: () => {}),
+    MenuTileModel(text: 'Warta', icon: Icons.title, onTap: () => {}),
+    MenuTileModel(text: 'Pengaturan', icon: Icons.settings, onTap: () => {})
   ];
 
   @override
@@ -18,14 +19,7 @@ class MenuDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(
-            child: Column(
-              children: <Widget>[
-                Material(child: SvgPicture.asset('assets/images/title-logo.svg', height: 60, color: Colors.blue)),
-                Text('HKBP Reformanda', style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.blue))
-              ],
-            ),
-          ),
+          DrawerHeader(child: Material(child: SvgPicture.asset(logoSVG, color: Colors.blue))),
           Column(children: menuList.map((menu) => MenuTile(menu)).toList())
         ],
       ),

@@ -8,6 +8,7 @@ final String montserratFont = 'Montserrat';
 void main() => runApp(MaterialApp(
     title: appTitle,
     home: App(),
+    debugShowCheckedModeBanner: false,
     theme: ThemeData(
       fontFamily: nunitoFont,
       appBarTheme: AppBarTheme(
