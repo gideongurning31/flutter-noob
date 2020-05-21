@@ -9,8 +9,12 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(this.appTitle), centerTitle: true),
-      drawer: MenuDrawer(),
+      drawer: MenuDrawer(navigateTo),
       body: Home(),
     );
+  }
+
+  void navigateTo(String route) {
+    print(route);
   }
 }
