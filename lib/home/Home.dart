@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import './menutile.dart';
+import 'MenuTile.dart';
+import '../model/MenuTileModel.dart';
 
 class Home extends StatelessWidget {
-  String appTitle = 'App Title';
+  String appTitle = 'HKBP Reformanda';
 
   @override
   Widget build(BuildContext context) {
@@ -17,16 +18,14 @@ class Home extends StatelessWidget {
         child: ListView(
           children: <Widget>[
             DrawerHeader(
-              child: Text('DRAWER HEADER'),
               decoration: BoxDecoration(gradient: LinearGradient(colors: <Color>[Colors.blue, Colors.lightBlueAccent])),
             ),
-            MenuTile(),
-            MenuTile(),
-            MenuTile(),
+            MenuTile(MenuTileModel('Title 1', Icons.person, () => {})),
+            MenuTile(MenuTileModel('Title 2', Icons.add_box, () => {})),
+            MenuTile(MenuTileModel('Title 3', Icons.delete, () => {})),
           ],
         ),
       ),
     );
   }
-
 }
