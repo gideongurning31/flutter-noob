@@ -3,7 +3,14 @@ import 'MenuTile.dart';
 import '../model/MenuTileModel.dart';
 
 class Home extends StatelessWidget {
-  String appTitle = 'HKBP Reformanda';
+  final String appTitle = 'HKBP Reformanda';
+  final List<MenuTileModel> menuList = [
+    MenuTileModel('Kegiatan', Icons.av_timer, () => {}),
+    MenuTileModel('Kategorial', Icons.accessibility, () => {}),
+    MenuTileModel('Renungan', Icons.book, () => {}),
+    MenuTileModel('Warta', Icons.title, () => {}),
+    MenuTileModel('Pengaturan', Icons.settings, () => {})
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -13,16 +20,15 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.blueAccent[500],
       ),
-
       drawer: Drawer(
         child: ListView(
           children: <Widget>[
             DrawerHeader(
-              decoration: BoxDecoration(gradient: LinearGradient(colors: <Color>[Colors.blue, Colors.lightBlueAccent])),
+              decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                      colors: <Color>[Colors.blue, Colors.lightBlueAccent])),
             ),
-            MenuTile(MenuTileModel('Title 1', Icons.person, () => {})),
-            MenuTile(MenuTileModel('Title 2', Icons.add_box, () => {})),
-            MenuTile(MenuTileModel('Title 3', Icons.delete, () => {})),
+            Column(children: menuList.map((menu) => MenuTile(menu)).toList())
           ],
         ),
       ),
