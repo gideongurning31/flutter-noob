@@ -7,11 +7,11 @@ class MenuDrawer extends StatelessWidget {
 
   final String logoSVG = 'assets/images/title-logo.svg';
   final List<MenuTileModel> menuList = [
-    MenuTileModel(text: 'Kegiatan', icon: Icons.av_timer, onTap: () => {}),
-    MenuTileModel(text: 'Kategorial', icon: Icons.accessibility_new, onTap: () => {}),
-    MenuTileModel(text: 'Renungan', icon: Icons.book, onTap: () => {}),
-    MenuTileModel(text: 'Warta', icon: Icons.title, onTap: () => {}),
-    MenuTileModel(text: 'Pengaturan', icon: Icons.settings, onTap: () => {})
+    MenuTileModel(text: 'Kegiatan', icon: Icons.av_timer, onTap: () => {}, route: '/kegiatan'),
+    MenuTileModel(text: 'Kategorial', icon: Icons.accessibility_new, onTap: () => {}, route: '/kategorial'),
+    MenuTileModel(text: 'Renungan', icon: Icons.book, onTap: () => {}, route: '/renungan'),
+    MenuTileModel(text: 'Warta', icon: Icons.title, onTap: () => {}, route: '/warta'),
+    MenuTileModel(text: 'Pengaturan', icon: Icons.settings, onTap: () => {}, route: '/pengaturan')
   ];
 
   @override
