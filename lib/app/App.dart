@@ -9,17 +9,18 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> {
   final String appTitle = 'HKBP Reformanda';
+  Widget currentPage = Home();
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: Text(this.appTitle), centerTitle: true),
-      drawer: MenuDrawer(navigateTo),
-      body: Home(),
+      drawer: MenuDrawer(navigate),
+      body: currentPage,
     );
   }
 
-  void navigateTo(String route) {
-    print(route);
+  void navigate(Widget page) {
+    if (currentPage != page) setState(() => currentPage = page);
   }
 }

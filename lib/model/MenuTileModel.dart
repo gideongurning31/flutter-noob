@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class MenuTileModel {
-  final IconData icon;
+  final Widget page;
   final String text;
-  final String route;
+  final IconData icon;
 
-  MenuTileModel(
-      {@required this.text, this.icon = Icons.block, this.route = ''});
+  MenuTileModel({@required this.page, this.text = 'PAGE TITLE', this.icon = Icons.block});
 }

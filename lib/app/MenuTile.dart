@@ -12,7 +12,7 @@ class MenuTile extends StatelessWidget {
       margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
       decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.blueGrey))),
       child: InkWell(
-        onTap: () => _navigateTo(_menu.route),
+        onTap: () => _navigateTo(context, _menu.page),
         splashColor: Colors.lightBlueAccent,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
