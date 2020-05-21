@@ -17,10 +17,10 @@ class MenuTile extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             SizedBox(width: 15.0),
-            Icon(_menu.icon),
+            Icon(_menu.icon, color: Colors.blue),
             Container(
                 padding: EdgeInsets.all(10.0),
-                child: Text(_menu.text, style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold, fontSize: 20.0)))
+                child: Text(_menu.text, style: TextStyle(fontFamily: 'Montserrat', fontWeight: FontWeight.bold, fontSize: 20.0, color: Colors.blue)))
           ],
         ),
       ),
