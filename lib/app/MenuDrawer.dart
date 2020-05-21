@@ -6,11 +6,11 @@ import '../model/MenuTileModel.dart';
 class MenuDrawer extends StatelessWidget {
 
   final List<MenuTileModel> menuList = [
-    MenuTileModel('Kegiatan', Icons.av_timer, () => {}),
-    MenuTileModel('Kategorial', Icons.accessibility, () => {}),
-    MenuTileModel('Renungan', Icons.book, () => {}),
-    MenuTileModel('Warta', Icons.title, () => {}),
-    MenuTileModel('Pengaturan', Icons.settings, () => {})
+    MenuTileModel(text: 'Kegiatan', icon: Icons.av_timer),
+    MenuTileModel(text: 'Kategorial', icon: Icons.accessibility_new),
+    MenuTileModel(text: 'Renungan', icon: Icons.book),
+    MenuTileModel(text: 'Warta', icon: Icons.title),
+    MenuTileModel(text: 'Pengaturan', icon: Icons.settings)
   ];
 
   @override

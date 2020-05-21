@@ -5,5 +5,5 @@ class MenuTileModel {
   final String text;
   final Function onTap;
 
-  MenuTileModel(this.text, this.icon, this.onTap);
+  MenuTileModel({@required this.text, @required this.icon, this.onTap});
 }

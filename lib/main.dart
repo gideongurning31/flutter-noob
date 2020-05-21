@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home/Home.dart';
+import 'app/App.dart';
 
 final String appTitle = 'HKBP Reformanda';
 final String nunitoFont = 'Nunito';
@@ -7,7 +7,7 @@ final String montserratFont = 'Montserrat';
 
 void main() => runApp(MaterialApp(
     title: appTitle,
-    home: Home(),
+    home: App(),
     theme: ThemeData(
       fontFamily: nunitoFont,
       appBarTheme: AppBarTheme(
