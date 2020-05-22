@@ -7,7 +7,7 @@ final String montserratFont = 'Montserrat';
 
 void main() => runApp(MaterialApp(
     title: appTitle,
-    home: App(),
+    home: SafeArea(child: App(), minimum: EdgeInsets.all(5.0)),
     debugShowCheckedModeBanner: false,
     theme: ThemeData(
       fontFamily: nunitoFont,
