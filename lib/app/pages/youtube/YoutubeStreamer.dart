@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:youtube_player_flutter/youtube_player_flutter.dart';
+import 'package:youtube_player/youtube_player.dart';
 
 class YoutubeStreamer extends StatelessWidget {
+  final String url = '';
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      height: 300.0,
-      width: double.infinity,
-      color: Colors.grey,
-      child: Center(child: Text('KONTEN VIDEO', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20.0))),
+    return YoutubePlayer(
+      source: url,
+      quality: YoutubeQuality.LOW,
+      aspectRatio: 16 / 9,
+      showThumbnail: false,
     );
   }
 }
