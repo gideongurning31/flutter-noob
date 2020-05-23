@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import '../model/MenuTileModel.dart';
-import 'menu/Home.dart';
-import 'menu/Kategorial.dart';
-import 'menu/Kegiatan.dart';
-import 'menu/Pengaturan.dart';
-import 'menu/Renungan.dart';
-import 'menu/Warta.dart';
+import '../../model/MenuTileModel.dart';
+import '../pages/Home.dart';
+import '../pages/Kategorial.dart';
+import '../pages/Kegiatan.dart';
+import '../pages/Pengaturan.dart';
+import '../pages/Renungan.dart';
+import '../pages/Warta.dart';
 
 class AppMenu {
   static final List<MenuTileModel> menu = [

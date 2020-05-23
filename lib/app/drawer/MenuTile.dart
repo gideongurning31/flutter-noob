@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../model/MenuTileModel.dart';
+import '../../model/MenuTileModel.dart';
 
 class MenuTile extends StatelessWidget {
   final MenuTileModel _menu;

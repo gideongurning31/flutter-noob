@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'AppMenu.dart';
 import 'MenuTile.dart';
-import '../model/MenuTileModel.dart';
+import '../../model/MenuTileModel.dart';
 
 class MenuDrawer extends StatelessWidget {
   final String logoSVG = 'assets/images/title-logo.svg';
