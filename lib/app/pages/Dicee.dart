@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Renungan extends StatelessWidget {
+class Dicee extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('RENUNGAN PAGE'));
+    return Center(child: Text('Dicee'));
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-class Kategorial extends StatelessWidget {
+class BusinessCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Center(child: Text('KATEGORIAL PAGE'));
+    return Center(child: Text('Business Card'));
   }
 }
