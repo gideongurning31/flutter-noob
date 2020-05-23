@@ -36,3 +36,6 @@ lib/generated_plugin_registrant.dart
 
 # Assets & local files
 assets/
+
+# Credentials
+app/utils/Keys.dart
