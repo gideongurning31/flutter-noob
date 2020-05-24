@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'Questions.dart';
 import 'QuestionsCard.dart';
 import 'Answer.dart';
@@ -48,8 +49,24 @@ class _NoobQuizState extends State<NoobQuiz> {
     });
   }
 
-  // TODO: Display result if all questions answered.
   void showResult() {
-    index = 0;
+    int userScore = 0;
+    scores.forEach((score) => userScore += score ? 1 : 0);
+    String message = 'You\'ve answered $userScore correct answers, out of ${questions.length()} questions.';
+    Alert(context: context, type: userScore > 0 ? AlertType.success : AlertType.error, title: message, buttons: [
+      DialogButton(
+        child: Text('OK', style: TextStyle(color: Colors.white, fontSize: 20)),
+        onPressed: () => reset(),
+        width: 120,
+      )
+    ]).show();
+  }
+
+  void reset() {
+    Navigator.pop(context);
+    setState(() {
+      index = 0;
+      scores.removeRange(0, scores.length);
+    });
   }
 }

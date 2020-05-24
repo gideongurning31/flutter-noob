@@ -4,7 +4,6 @@ import 'MenuTile.dart';
 import '../../model/MenuTileModel.dart';
 
 class MenuDrawer extends StatelessWidget {
-  final String logoSVG = 'assets/images/title-logo.svg';
   final List<MenuTileModel> menuList = AppMenu.menu;
   final Function _navigateTo;
   MenuDrawer(this._navigateTo);
