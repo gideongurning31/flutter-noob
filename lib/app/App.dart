@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'pages/BusinessCard.dart';
 import 'drawer/MenuDrawer.dart';
-import 'pages/Home.dart';
 
 class App extends StatefulWidget {
   @override
@@ -9,7 +9,7 @@ class App extends StatefulWidget {
 
 class _AppState extends State<App> {
   final String appTitle = 'GideonGurning';
-  Widget currentPage = Home();
+  Widget currentPage = BusinessCard();
 
   @override
   Widget build(BuildContext context) {
