@@ -46,3 +46,7 @@ flutter:
           style: italic
         - asset: assets/fonts/Nunito-Italic.ttf
           style: italic
+
+    - family: Pacifico
+      fonts:
+        - asset: assets/fonts/Pacifico-Regular.ttf

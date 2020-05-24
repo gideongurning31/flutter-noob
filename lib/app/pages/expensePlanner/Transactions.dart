@@ -9,11 +9,7 @@ class Transactions extends StatefulWidget {
 }
 
 class _TransactionsState extends State<Transactions> {
-  final List<ExpensePlannerModel> _transactions = [
-    ExpensePlannerModel(id: '1', title: 'Sticker Vinyl Carbon', value: 14750, time: DateTime.now()),
-    ExpensePlannerModel(id: '2', title: 'Mousepad', value: 6500, time: DateTime.now()),
-    ExpensePlannerModel(id: '3', title: 'Taffware EVA Case', value: 13500, time: DateTime.now()),
-  ];
+  final List<ExpensePlannerModel> _transactions = [];
 
   @override
   Widget build(BuildContext context) {
