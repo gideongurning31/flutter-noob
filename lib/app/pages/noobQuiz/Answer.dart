@@ -9,8 +9,8 @@ class Answer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 250.0,
-      margin: EdgeInsets.symmetric(vertical: 0.0, horizontal: 10.0),
+      height: 220.0,
+      margin: EdgeInsets.symmetric(horizontal: 10.0),
       child: Column(children: _choices.map((choice) => choiceCard(choice)).toList()),
     );
   }

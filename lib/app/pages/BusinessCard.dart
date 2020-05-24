@@ -11,9 +11,10 @@ class BusinessCard extends StatelessWidget {
         Center(child: circleAvatar()),
         SizedBox(height: 20.0),
         name(),
-        Container(color: Colors.black, height: 2, width: 230, margin: EdgeInsets.all(5.0)),
         title(),
-        Container(height: 200),
+        Container(color: Colors.black, height: 2, width: 250, margin: EdgeInsets.all(10.0)),
+        infoCard(Constants.PHONE, Icons.phone),
+        infoCard(Constants.EMAIL, Icons.mail),
       ],
     );
   }
@@ -30,7 +31,7 @@ class BusinessCard extends StatelessWidget {
     return Text(
       Constants.PROFILE_NAME,
       textAlign: TextAlign.center,
-      style: TextStyle(fontSize: 30.0, fontFamily: 'Pacifico'),
+      style: TextStyle(fontSize: 40.0, fontFamily: 'Pacifico'),
     );
   }
 
@@ -38,7 +39,28 @@ class BusinessCard extends StatelessWidget {
     return Text(
       Constants.PROFILE_TITLE,
       textAlign: TextAlign.center,
-      style: TextStyle(fontSize: 15.0, fontWeight: FontWeight.bold),
+      style: TextStyle(fontSize: 20.0, fontWeight: FontWeight.bold),
+    );
+  }
+
+  Widget infoCard(String text, IconData icon) {
+    return Container(
+      width: double.infinity,
+      padding: EdgeInsets.symmetric(horizontal: 20.0),
+      child: Card(
+        color: Colors.black45,
+        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              Icon(icon, color: Colors.white),
+              Text(text, style: TextStyle(color: Colors.white)),
+            ],
+          ),
+        ),
+      ),
     );
   }
 }

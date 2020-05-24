@@ -19,9 +19,7 @@ class _NoobQuizState extends State<NoobQuiz> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
-          Container(
-              height: 20.0,
-              child: Row(children: scores.map((score) => scoreIcon(score)).toList())),
+          Row(children: scores.map((score) => scoreIcon(score)).toList()),
           QuestionsCard(questions[count].question),
           Answer(questions[count].choice, questions[count].answer, checkAnswer),
         ],
