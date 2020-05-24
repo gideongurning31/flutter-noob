@@ -9,7 +9,8 @@ class NoobQuiz extends StatefulWidget {
 }
 
 class _NoobQuizState extends State<NoobQuiz> {
-  int count = 0;
+  int index = 0;
+  final Questions questions = Questions();
   final List<bool> scores = [];
 
   @override
@@ -20,8 +21,8 @@ class _NoobQuizState extends State<NoobQuiz> {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           Row(children: scores.map((score) => scoreIcon(score)).toList()),
-          QuestionsCard(questions[count].question),
-          Answer(questions[count].choice, questions[count].answer, checkAnswer),
+          QuestionsCard(questions.get(index).question),
+          Answer(questions.get(index).choice, questions.get(index).answer, checkAnswer),
         ],
       ),
     );
@@ -38,13 +39,17 @@ class _NoobQuizState extends State<NoobQuiz> {
       );
   }
 
+  // TODO: Scrollable row for score icons.
   void checkAnswer(bool correct) {
-    // TODO: Display result if all questions answered.
-    // TODO: Scrollable row for score icons.
     setState(() {
       scores.add(correct);
-      if (count == questions.length - 1) count = 0;
-      else count++;
+      if (index == questions.length() - 1) showResult();
+      else index++;
     });
+  }
+
+  // TODO: Display result if all questions answered.
+  void showResult() {
+    index = 0;
   }
 }
