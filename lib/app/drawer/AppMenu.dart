@@ -3,6 +3,7 @@ import '../../model/MenuTileModel.dart';
 import '../pages/Home.dart';
 import '../pages/BusinessCard.dart';
 import '../pages/Dicee.dart';
+import '../pages/noobQuiz/NoobQuiz.dart';
 import '../pages/expensePlanner/ExpensePlanner.dart';
 
 class AppMenu {
@@ -10,6 +11,7 @@ class AppMenu {
     MenuTileModel(text: 'Home', icon: Icons.home, page: Home()),
     MenuTileModel(text: 'Business Card', icon: Icons.home, page: BusinessCard()),
     MenuTileModel(text: 'Dicee', icon: Icons.home, page: Dicee()),
+    MenuTileModel(text: 'Noob Quiz', icon: Icons.home, page: NoobQuiz()),
     MenuTileModel(text: 'Expense Planner', icon: Icons.home, page: ExpensePlanner())
   ];
 }

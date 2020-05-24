@@ -8,7 +8,7 @@ class App extends StatefulWidget {
 }
 
 class _AppState extends State<App> {
-  final String appTitle = 'HKBP Reformanda';
+  final String appTitle = 'GideonGurning';
   Widget currentPage = Home();
 
   @override

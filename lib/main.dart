@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'app/App.dart';
 
-final String appTitle = 'HKBP Reformanda';
+final String appTitle = 'GideonGurning';
 final String nunitoFont = 'Nunito';
 final String montserratFont = 'Montserrat';
 

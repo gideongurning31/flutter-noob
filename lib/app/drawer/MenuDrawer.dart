@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'AppMenu.dart';
 import 'MenuTile.dart';
 import '../../model/MenuTileModel.dart';
@@ -15,7 +14,7 @@ class MenuDrawer extends StatelessWidget {
     return Drawer(
       child: ListView(
         children: <Widget>[
-          DrawerHeader(child: Material(child: SvgPicture.asset(logoSVG, color: Colors.blue))),
+          SizedBox(height: 50),
           Column(children: menuList.map((menu) => MenuTile(menu, navigateTo)).toList())
         ],
       ),
