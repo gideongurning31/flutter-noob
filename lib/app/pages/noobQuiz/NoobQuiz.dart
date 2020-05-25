@@ -31,13 +31,13 @@ class _NoobQuizState extends State<NoobQuiz> {
 
   Padding scoreIcon(bool answer) {
     if (answer) return Padding(
-        padding: const EdgeInsets.all(5.0),
-        child: Icon(Icons.check, color: Colors.green),
-      );
+      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 1.0),
+      child: Icon(Icons.check, color: Colors.green),
+    );
     else return Padding(
-        padding: const EdgeInsets.all(5.0),
-        child: Icon(Icons.close, color: Colors.red),
-      );
+      padding: const EdgeInsets.symmetric(vertical: 5.0, horizontal: 1.0),
+      child: Icon(Icons.close, color: Colors.red),
+    );
   }
 
   // TODO: Scrollable row for score icons.
@@ -53,7 +53,7 @@ class _NoobQuizState extends State<NoobQuiz> {
     int userScore = 0;
     scores.forEach((score) => userScore += score ? 1 : 0);
     String message = 'You\'ve answered $userScore correct answers, out of ${questions.length()} questions.';
-    Alert(context: context, type: userScore > 0 ? AlertType.success : AlertType.error, title: message, buttons: [
+    Alert(context: context, type: userScore > questions.length()/2 ? AlertType.success : AlertType.error, title: message, buttons: [
       DialogButton(
         child: Text('OK', style: TextStyle(color: Colors.white, fontSize: 20)),
         onPressed: () => reset(),

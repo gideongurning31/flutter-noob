@@ -38,13 +38,13 @@ class Questions {
         answer: 'Nope'),
     QuizQuestionsModel(
         id: '6',
-        question: 'Which bird is nicknamed The Laughing Jackass?',
-        choice: ['White Cockatoo', 'Mockingbird', 'Kookaburra', 'Australian Magpie'],
-        answer: 'Kookaburra'),
+        question: 'Which one of these Villains is one of Spider-Man\'s foe?',
+        choice: ['Selina Kyle', 'Susan Storm', 'Oswald Cobblepot', 'Felicia Hardy'],
+        answer: 'Felicia Hardy'),
     QuizQuestionsModel(
         id: '7',
         question: 'What is Coprastastaphobia people fear of?',
-        choice: ['Tiny Rooms', 'Spiders', 'Constipations', 'Conspirations'],
+        choice: ['Constipations', 'Conspirations', 'Tiny Rooms', 'Spiders'],
         answer: 'Constipations'),
     QuizQuestionsModel(
         id: '8',
@@ -61,5 +61,25 @@ class Questions {
         question: 'What planet is most like earth in size, mass, density and gravity?',
         choice: ['Mercurius', 'Venus', 'Mars', 'Uranus'],
         answer: 'Venus'),
+    QuizQuestionsModel(
+        id: '11',
+        question: 'According to the Caribbean, what kind of animal is Mountain Chicken (Leptodactylus fallax)?',
+        choice: ['Fish', 'Birds/Chickens', 'Cats', 'Frogs'],
+        answer: 'Frogs'),
+    QuizQuestionsModel(
+        id: '12',
+        question: 'Which one of these actors has never been cast as Batman?',
+        choice: ['George Clooney', 'Harrison Ford', 'Val Kilmer', 'Ben Affleck'],
+        answer: 'Harrison Ford'),
+    QuizQuestionsModel(
+        id: '13',
+        question: 'Which bird is nicknamed "The Laughing Jackass"?',
+        choice: ['White Cockatoo', 'Australian Magpie', 'Mockingbird', 'Kookaburra'],
+        answer: 'Kookaburra'),
+    QuizQuestionsModel(
+        id: '14',
+        question: 'Which one of these fictional character is a villain and comes from Marvel franchise?',
+        choice: ['Alexander Luthor Jr.', 'Tim Drake', 'Quentin Beck', 'Marc Spector'],
+        answer: 'Quentin Beck'),
   ];
 }

@@ -18,25 +18,26 @@ class InputTransaction extends StatelessWidget {
               TextField(
                   decoration: InputDecoration(labelText: 'Transaction Title'),
                   controller: titleController,
-                  onSubmitted: (_) => submit()),
+                  onSubmitted: (_) => submit(context)),
               TextField(
                   decoration: InputDecoration(labelText: 'Amount'),
                   controller: amountController,
                   keyboardType: TextInputType.number,
-                  onSubmitted: (_) => submit()),
+                  onSubmitted: (_) => submit(context)),
               FlatButton(
                   color: Colors.blueGrey,
                   textColor: Colors.greenAccent,
                   child: Text('Add Transaction'),
-                  onPressed: submit)
+                  onPressed: () => submit(context))
             ],
           ),
         ));
   }
 
-  void submit() {
+  void submit(BuildContext ctx) {
     final title = titleController.text;
     final amount = int.parse(amountController.text);
+    FocusScope.of(ctx).requestFocus(FocusNode());
     if (title.isEmpty || amount <= 0) return;
     addTransaction(title, amount);
   }
