@@ -38,9 +38,9 @@ class Questions {
         answer: 'Nope'),
     QuizQuestionsModel(
         id: '6',
-        question: 'Which one of these Villains is one of Spider-Man\'s foe?',
-        choice: ['Selina Kyle', 'Susan Storm', 'Oswald Cobblepot', 'Felicia Hardy'],
-        answer: 'Felicia Hardy'),
+        question: 'Which one of these Villains is not one of Spider-Man\'s foe?',
+        choice: ['Wilson Fisk', 'Flint Marko', 'Jonathan Crane', 'Felicia Hardy'],
+        answer: 'Jonathan Crane'),
     QuizQuestionsModel(
         id: '7',
         question: 'What is Coprastastaphobia people fear of?',
@@ -53,7 +53,7 @@ class Questions {
         answer: 'One'),
     QuizQuestionsModel(
         id: '9',
-        question: 'How many books of the Bible are named after a women?',
+        question: 'How many books of the Bible are named after a woman?',
         choice: ['none', '1', '2', '4'],
         answer: '2'),
     QuizQuestionsModel(
@@ -81,5 +81,60 @@ class Questions {
         question: 'Which one of these fictional character is a villain and comes from Marvel franchise?',
         choice: ['Alexander Luthor Jr.', 'Tim Drake', 'Quentin Beck', 'Marc Spector'],
         answer: 'Quentin Beck'),
+    QuizQuestionsModel(
+        id: '15',
+        question: 'What problem did Leonardo da Vinci, Winston Churchill, Albert Einstein and Thomas Edison have in common?',
+        choice: ['Colorblind', 'Dyslexia', 'Autism', 'Insomnia'],
+        answer: 'Dyslexia'),
+    QuizQuestionsModel(
+        id: '16',
+        question: 'In which movie did Leonardo DiCaprio won an Oscar as Best Actor?',
+        choice: ['The Wolf of Wall Street', 'Shutter Island', 'The Revenant', 'The Aviator'],
+        answer: 'The Revenant'),
+    QuizQuestionsModel(
+        id: '17',
+        question: 'Which one of these characters whose not an alter ego of The Flash?',
+        choice: ['Barry Allen', 'Hal Jordan', 'Wally West', 'Jay Garrick'],
+        answer: 'Hal Jordan'),
+    QuizQuestionsModel(
+        id: '18',
+        question: 'What\'s the first name of the first Director of Federal Bureau of Investigation, J. Edgar Hoover?',
+        choice: ['John', 'James', 'Jacob', 'Jason'],
+        answer: 'John'),
+    QuizQuestionsModel(
+        id: '19',
+        question: 'Which one of these movies was not produced/directed by Christopher Nolan?',
+        choice: ['Dunkirk', 'The Martian', 'Interstellar', 'The Prestige'],
+        answer: 'The Martian'),
+    QuizQuestionsModel(
+        id: '20',
+        question: 'What\'s the name of mythology creature whose had a lion\'s head, a goat\'s body and a dragon\'s tail?',
+        choice: ['Leviathan', 'Minotaur', 'Griffins', 'Chimera'],
+        answer: 'Chimera'),
+    QuizQuestionsModel(
+        id: '21',
+        question: 'Which one of these tech products are not classified as a search engine?',
+        choice: ['Google', 'Cortana', 'DuckDuckGo', 'Bing'],
+        answer: 'Cortana'),
+    QuizQuestionsModel(
+        id: '22',
+        question: 'Which biblical figure built an ark?',
+        choice: ['Jonah', 'Moses', 'Noah', 'King Salomon'],
+        answer: 'Noah'),
+    QuizQuestionsModel(
+        id: '23',
+        question: 'Which of these below are the reason a blood cell is colored red?',
+        choice: ['Clorofil', 'Hemoglobin', 'Oxygen', 'Carbon Dioxide'],
+        answer: 'Hemoglobin'),
+    QuizQuestionsModel(
+        id: '24',
+        question: 'What was the Former USA President, Ronald Reagan, occupation before turning to politics?',
+        choice: ['Actor', 'Movie Producer', 'Musician', 'Athlete'],
+        answer: 'Actor'),
+    QuizQuestionsModel(
+        id: '25',
+        question: 'Who wasn\'t a member of The Legendary Rock Band, Queen?',
+        choice: ['Brian May', 'Freddie Mercury', 'Roger Taylor', 'Ringo Starr'],
+        answer: 'Ringo Starr'),
   ];
 }
