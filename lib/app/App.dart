@@ -14,7 +14,7 @@ class _AppState extends State<App> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(this.appTitle), centerTitle: true),
+      appBar: AppBar(),
       drawer: MenuDrawer(navigate),
       body: currentPage,
     );

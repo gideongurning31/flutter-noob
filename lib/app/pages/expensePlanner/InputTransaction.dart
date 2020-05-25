@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../services/Constants.dart';
 
 class InputTransaction extends StatelessWidget {
   InputTransaction(this.addTransaction);
@@ -25,8 +26,7 @@ class InputTransaction extends StatelessWidget {
                   keyboardType: TextInputType.number,
                   onSubmitted: (_) => submit(context)),
               FlatButton(
-                  color: Colors.blueGrey,
-                  textColor: Colors.greenAccent,
+                  color: Constants.COLOR_PRIMARY_LIGHT,
                   child: Text('Add Transaction'),
                   onPressed: () => submit(context))
             ],

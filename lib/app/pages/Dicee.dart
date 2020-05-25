@@ -18,14 +18,12 @@ class _DiceeState extends State<Dicee> {
           Expanded(
             child: FlatButton(
               child: Image.asset('assets/images/dice-$leftDice.png'),
-              splashColor: Colors.grey,
               onPressed: () => setState(() => leftDice = Random().nextInt(6) + 1),
             ),
           ),
           Expanded(
             child: FlatButton(
               child: Image.asset('assets/images/dice-$rightDice.png'),
-              splashColor: Colors.grey,
               onPressed: () => setState(() => rightDice = Random().nextInt(6) + 1),
             ),
           ),

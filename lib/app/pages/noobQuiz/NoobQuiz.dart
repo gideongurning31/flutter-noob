@@ -55,7 +55,7 @@ class _NoobQuizState extends State<NoobQuiz> {
     String message = 'You\'ve answered $userScore correct answers, out of ${questions.length()} questions.';
     Alert(context: context, type: userScore > questions.length()/2 ? AlertType.success : AlertType.error, title: message, buttons: [
       DialogButton(
-        child: Text('OK', style: TextStyle(color: Colors.white, fontSize: 20)),
+        child: Text('OK', style: TextStyle(fontSize: 20)),
         onPressed: () => reset(),
         width: 120,
       )

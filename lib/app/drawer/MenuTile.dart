@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../services/Constants.dart';
 import '../../model/MenuTileModel.dart';
 
 class MenuTile extends StatelessWidget {
@@ -10,23 +11,21 @@ class MenuTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 15.0),
-      decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Colors.blueGrey))),
+      decoration: BoxDecoration(border: Border(bottom: BorderSide(color: Constants.COLOR_PRIMARY_LIGHT))),
       child: InkWell(
         onTap: () => _navigateTo(context, _menu.page),
-        splashColor: Colors.lightBlueAccent,
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
             SizedBox(width: 15.0),
-            Icon(_menu.icon, color: Colors.blue),
+            Icon(_menu.icon),
             Container(
                 padding: EdgeInsets.all(10.0),
                 child: Text(_menu.text,
                     style: TextStyle(
                         fontFamily: 'Montserrat',
                         fontWeight: FontWeight.bold,
-                        fontSize: 20.0,
-                        color: Colors.blue)))
+                        fontSize: 20.0)))
           ],
         ),
       ),

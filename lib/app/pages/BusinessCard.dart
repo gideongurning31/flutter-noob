@@ -12,7 +12,7 @@ class BusinessCard extends StatelessWidget {
         SizedBox(height: 20.0),
         name(),
         title(),
-        Container(color: Colors.black, height: 2, width: 250, margin: EdgeInsets.all(10.0)),
+        Container(height: 2, width: 250, margin: EdgeInsets.all(10.0), color: Constants.COLOR_PRIMARY_LIGHT),
         infoCard(Constants.PHONE, Icons.phone),
         infoCard(Constants.EMAIL, Icons.mail),
       ],
@@ -22,7 +22,6 @@ class BusinessCard extends StatelessWidget {
   CircleAvatar circleAvatar() {
     return CircleAvatar(
       backgroundImage: AssetImage('assets/images/profile.jpg'),
-      backgroundColor: Colors.green,
       radius: 80.0,
     );
   }
@@ -48,15 +47,15 @@ class BusinessCard extends StatelessWidget {
       width: double.infinity,
       padding: EdgeInsets.symmetric(horizontal: 20.0),
       child: Card(
-        color: Colors.black45,
-        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 50.0),
+        margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 30.0),
         child: Padding(
           padding: const EdgeInsets.symmetric(vertical: 10.0, horizontal: 20.0),
           child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              Icon(icon, color: Colors.white),
-              Text(text, style: TextStyle(color: Colors.white)),
+              Icon(icon),
+              SizedBox(width: 20.0),
+              Text(text)
             ],
           ),
         ),

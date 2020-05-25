@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../../services/Constants.dart';
 
 class Answer extends StatelessWidget {
   final List<String> _choices;
@@ -19,8 +20,8 @@ class Answer extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: FlatButton(
-        color: Colors.blueAccent.shade100,
-        child: Text(text, textAlign: TextAlign.center, style: TextStyle(color: Colors.black87, fontSize: 15)),
+        color: Constants.COLOR_PRIMARY_LIGHT,
+        child: Text(text, textAlign: TextAlign.center),
         onPressed: () => _pushAnswer(text == _answer),
       ),
     );
