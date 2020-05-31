@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../services/Constants.dart';
+import '../../Constants.dart';
 
 class Answer extends StatelessWidget {
   final List<String> _choices;

@@ -1,4 +1,4 @@
-import '../../../model/QuizQuestionsModel.dart';
+import '../../model/QuizQuestionsModel.dart';
 
 class Questions {
   QuizQuestionsModel get(int index) {

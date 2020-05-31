@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
-import '../../../services/Constants.dart';
+import '../../Constants.dart';
 import 'Questions.dart';
 import 'QuestionsCard.dart';
 import 'Answer.dart';

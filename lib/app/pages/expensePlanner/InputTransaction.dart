@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../services/Constants.dart';
+import '../../Constants.dart';
 
 class InputTransaction extends StatelessWidget {
   InputTransaction(this.addTransaction);

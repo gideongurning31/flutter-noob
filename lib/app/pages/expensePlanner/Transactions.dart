@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'InputTransaction.dart';
 import 'TransactionCard.dart';
-import '../../../model/ExpensePlannerModel.dart';
+import '../../model/ExpensePlannerModel.dart';
 
 class Transactions extends StatefulWidget {
   @override

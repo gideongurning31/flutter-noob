@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'services/Constants.dart';
+import 'app/Constants.dart';
 import 'app/App.dart';
 
 void main() => runApp(

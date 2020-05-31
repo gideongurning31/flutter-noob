@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../model/MenuTileModel.dart';
+import '../model/MenuTileModel.dart';
 import '../pages/BusinessCard.dart';
 import '../pages/Dicee.dart';
 import '../pages/noobQuiz/NoobQuiz.dart';

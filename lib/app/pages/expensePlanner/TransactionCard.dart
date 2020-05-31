@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import '../../../services/Constants.dart';
-import '../../../model/ExpensePlannerModel.dart';
+import '../../Constants.dart';
+import '../../model/ExpensePlannerModel.dart';
 
 class TransactionCard extends StatelessWidget {
   TransactionCard(this.trx);

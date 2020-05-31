@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'AppMenu.dart';
 import 'MenuTile.dart';
-import '../../model/MenuTileModel.dart';
+import '../model/MenuTileModel.dart';
 
 class MenuDrawer extends StatelessWidget {
   final List<MenuTileModel> menuList = AppMenu.menu;

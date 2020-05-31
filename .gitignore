@@ -35,5 +35,5 @@ lib/generated_plugin_registrant.dart
 !/packages/flutter_tools/test/data/dart_dependencies_test/**/.packages
 
 # Assets constants & local files
-lib/services/Constants.dart
+lib/app/Constants.dart
 assets/

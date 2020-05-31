@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../services/Constants.dart';
-import '../../model/MenuTileModel.dart';
+import '../Constants.dart';
+import '../model/MenuTileModel.dart';
 
 class MenuTile extends StatelessWidget {
   final MenuTileModel _menu;
