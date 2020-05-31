@@ -36,7 +36,8 @@ class _TransactionsState extends State<Transactions> {
     ]);
   }
 
-  void addNewTransaction(String title, int value) {
-    setState(() => _transactions.add(ExpensePlannerModel(id: 'x', title: title, value: value, time: DateTime.now())));
+  void addNewTransaction(String title, int value) async {
+    ExpensePlannerModel newItem = await service.create(ExpensePlannerModel(title: title, value: value));
+    setState(() => _transactions.add(newItem));
   }
 }

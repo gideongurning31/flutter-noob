@@ -10,13 +10,24 @@ class ExpensePlannerService {
     http.Response response = await http.get(endpoint);
     List<dynamic> body = jsonDecode(response.body) ?? [];
     List<ExpensePlannerModel> list = List<ExpensePlannerModel>();
-    body.forEach((el) {
+    body.forEach((item) {
       list.add(ExpensePlannerModel(
-          id: el['id'],
-          title: el['title'],
-          value: el['value'],
-          time: DateTime.fromMillisecondsSinceEpoch(el['createdAt'])));
+          id: item['id'],
+          title: item['title'],
+          value: item['value'],
+          time: DateTime.fromMillisecondsSinceEpoch(item['createdAt'])));
     });
     return list;
+  }
+
+  Future<ExpensePlannerModel> create(ExpensePlannerModel payload) async {
+    http.Response response = await http.post(endpoint,
+        headers: {"content-type": "application/json"},
+        body: jsonEncode({"title": payload.title.trim(), "value": payload.value}));
+    if (response.statusCode == 201) {
+      dynamic newItem = jsonDecode(response.body) ?? null;
+      return ExpensePlannerModel(id: newItem['id'], title: newItem['title'], value: newItem['value'], time: DateTime.now());
+    }
+    return null;
   }
 }
