@@ -15,11 +15,4 @@ void main() => runApp(MaterialApp(
       accentColor: Colors.blueAccent,
       primarySwatch: Colors.blueGrey,
       canvasColor: Colors.white,
-      appBarTheme: AppBarTheme(
-        textTheme: ThemeData.light().textTheme.copyWith(
-            title: TextStyle(
-                fontFamily: montserratFont,
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold)),
-      ),
     )));
